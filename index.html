@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="google" content="notranslate">
+
+	<meta property="og:locale" content="id_ID" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Thew Wedding: Shiren & Eko" />
+	<meta property="og:description" content="Selasa, 6 Mei 2025" />
+	<meta property="og:image" content="https://krafta-ampana.github.io/shiren-eko/og-images.jpg" />
+	<meta property="og:image:width" content="371" />
+	<meta property="og:image:height" content="392" />
+	<meta property="og:url" content="https://krafta-ampana.github.io/shiren-eko" />
+	<meta property="og:site_name" content="krafta | Undangan Digital" />
+	<meta property="fb:app_id" content="771033985084304" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<title>The Wedding: Shiren & Eko</title>
+
+	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-6">
+				<div class="border rounded shadow-sm bg-light">
+
+<section class="py-5" style="background: #F4EFE9; min-height: 100vh; display: flex; align-items: center;">
+  <div class="container text-center">
+    <img src="assets/shiren001.png" class="img-fluid" alt="Nama Pengantin">
+    <p class="font1 mt-5" style="font-size: 12pt; color: #A57C56">Kepada Yth. Bapak/Ibu/Saudara<br><strong class="pt-2 pb-2"><i><span id='nama_tamu_undangan'></span></i></strong></br>Di Tempat</p>
+  </div>
+</section>
+<div class="text-center">
+ <img src="assets/shiren002.png" class="img-fluid" alt="Nama Pengantin">
+</div>
+<!--
+<section class="py-5" style="background-image: url('assets/shiren002.jpg'); background-size: cover; background-position: center; height: 300px; width: 100%; min-height: 100vh; display: flex; align-items: center; color: #A57C56">
+  <div class="container text-center">
+		<p class="font2">
+			We’re getting married!<br>
+			With joy in our hearts,<br>
+			we invite you to join us for the Holy Matrimony of
+		</p>
+		<div class="mt-5 mb-5">
+			<h2 class="font1">Sheren Erviana Tandi, S.M</h2>
+			<h5 class="font2">&</h5>
+			<h2 class="font1">Eko Putra Pameran</h2>
+		</div>
+		
+		<div class="container font1">
+		  <div class="row justify-content-center">
+			<div class="col-8">
+			  <table class="table text-center">
+				<tbody>
+				  <tr>
+					<td class="font3" colspan="2"><h3>Pemberkatan Nikah Kudus</h3></td>
+				  </tr>
+				  <tr>
+					<td>Selasa,<br><strong>06 Mei 2025</strong></td>
+					<td>Pukul<br><strong>10.00 WITA</strong></td>
+				  </tr>
+				  <tr>
+					<td colspan="2">Bertempat di,<br><strong>Gereja Toraja Eklesia Siporannu, Bahomakmur / Blok E</strong></td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		</div>
+		
+		<p class="font2">
+			Your presence and prayers<br>
+			will mean the world to us<br>
+			as we begin this new chapter together.
+		</p>
+		
+		<p class="font1 mt-5">
+			Hormat Kami,<br>
+			Kel. Bapak Yusup Tandi (Alm) & Ibu Yarnalian Koroke, A.Md.Pust<br>
+			Kel. Bapak Semuel Lindu & Ibu Kurniaty Pamearan<br><br>
+			<h1 class="font3">Shiren & Eko</h1>
+		</p>
+		
+  </div>
+</section>
+-->
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="assets/bootstrap.bundle.min.js"></script>
+	
+	<script>
+	function getParameterByName(name) {
+		let url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url);
+		if (!results || !results[2]) return "Tamu Undangan";
+		return decodeURIComponent(results[2].replace(/\+/g, " "))
+			.replace(/-/g, " ")
+			.replace(/\|/g, " / ")
+			.replace(/ dan /gi, " & ");
+	}
+
+	$(document).ready(function () {
+		$("#nama_tamu_undangan").append(getParameterByName('tamu'));
+	});
+	</script>
+	
+</body>
+
+</html>
